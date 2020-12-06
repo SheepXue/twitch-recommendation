@@ -1,0 +1,10 @@
+
+.DS_Store
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/com/.DS_Store
+src/main/java/com/laioffer/Twitch/.DS_Store
+src/main/java/com/laioffer/.DS_Store
+src/test/.DS_Store
+src/main/resources/config.properties
