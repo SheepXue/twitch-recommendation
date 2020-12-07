@@ -1,1 +1,13 @@
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLTableCreator.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/ItemType.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/Item.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/SearchServlet.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/external/TwitchClient.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/GameServlet.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/Game.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/external/TwitchException.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLException.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/FavoriteServlet.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLDBUtil.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/FavoriteRequestBody.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLConnection.java

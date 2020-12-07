@@ -53,7 +53,7 @@ public class MySQLConnection {
 
         // JDBC provide the question mark filling, the ? is a common string
 
-        String sql = "INSERT IGONORE INTO favorite_records (user_id, item_id) VALUES (?, ?)";
+        String sql = "INSERT IGNORE INTO favorite_records (user_id, item_id) VALUES (?, ?)";
         PreparedStatement statement = null;
         try {
             statement = conn.prepareStatement(sql);
@@ -61,7 +61,8 @@ public class MySQLConnection {
             statement.setString(2, item.getId());
             statement.executeUpdate();
         } catch (SQLException e) {
-            throw new MySQLException("failed to insetr the date ");
+            e.printStackTrace();
+            throw new MySQLException("failed to insert the date ");
         }
 
     }

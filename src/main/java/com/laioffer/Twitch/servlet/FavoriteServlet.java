@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet(name = "FavoriteServlet", urlPatterns = ("/favorite"))
+@WebServlet(name = "FavoriteServlet", urlPatterns = {"/favorite"})
 public class FavoriteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userId = request.getParameter("user_id");
