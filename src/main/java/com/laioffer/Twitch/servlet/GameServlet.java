@@ -18,7 +18,7 @@ import java.io.IOException;
 public class GameServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        // stream -> String -> json -> object
+        // stream -> String -> json object (hashmap)
         JSONObject jsonRequest = new JSONObject(IOUtils.toString(request.getReader()));
         String name = jsonRequest.getString("name");
         String developer = jsonRequest.getString("developer");
