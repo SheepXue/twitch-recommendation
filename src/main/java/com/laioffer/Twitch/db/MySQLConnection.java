@@ -3,6 +3,7 @@ package com.laioffer.Twitch.db;
 import com.laioffer.Twitch.entity.Game;
 import com.laioffer.Twitch.entity.Item;
 import com.laioffer.Twitch.entity.ItemType;
+import com.laioffer.Twitch.entity.User;
 
 import java.sql.*;
 import java.util.*;
@@ -200,7 +201,48 @@ public class MySQLConnection {
         return itemMap;
     }
 
+    public String verifyLogin(String userId, String password) throws MySQLException{
+        if (conn == null) {
+            System.err.println("DB connection failed");
+            throw new MySQLException("Failed to connect to Database");
+        }
+        String sql = "SELECT first_name, last_name FROM users WHERE id = ? AND password = ?";
+        String name = "";
+        try {
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1, userId);
+            statement.setString(2, password);
+            ResultSet rs = statement.executeQuery();
+            if(rs.next()) {
+                name = rs.getString("first_name") + " " + rs.getString("last_name");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new MySQLException("Failed to get user information from Database");
+        }
+        return name;
+    }
 
+    public boolean addUser(User user) throws MySQLException{
+        if(conn == null) {
+            System.err.println("DB connection failed");
+            throw new MySQLException("Failed to connect to Database");
+        }
+        String sql = "INSERT IGNORE INTO users VALUES (?, ?, ?, ?)";
+        // ignore will ignore the duplicate insertion
+        // if the user has already in the database will return 0
+        try {
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1, user.getUserId());
+            statement.setString(2, user.getPassword());
+            statement.setString(3, user.getFirstName());
+            statement.setString(4, user.getLastName());
+            return statement.executeUpdate() == 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new MySQLException("Failed to get user information from Database");
+        }
+    }
 
 }
 

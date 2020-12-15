@@ -1,3 +1,4 @@
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/LoginRequestBody.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLTableCreator.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/ItemType.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/Item.java
@@ -6,8 +7,14 @@
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/GameServlet.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/Game.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/external/TwitchException.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/RegisterServlet.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/ServletUtil.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/User.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLException.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/FavoriteServlet.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLDBUtil.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/FavoriteRequestBody.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/LoginServlet.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/servlet/LogoutServlet.java
+/Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/entity/LoginResponseBody.java
 /Users/yangxue/IdeaProjects/Twitch/src/main/java/com/laioffer/Twitch/db/MySQLConnection.java
